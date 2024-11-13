@@ -178,7 +178,7 @@ def simple_ddm_iat_diffusion_trial(v, a, ndtcorrect, ndterror):
 
 #Simple DDM simulator
 # For an entire subject
-#@njit
+@njit
 def simple_ddm_simulator_fun(theta):
     """Simulates data from a single subject in an IAT experiment."""
     num_obs = 120
